@@ -1,0 +1,62 @@
+
+
+
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio DOM, eventos y funciones</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!--
+			1. Formulario campos: Nombre, Apellidos y edad
+			2. Boton de enviar el formulario
+			3. Mostrar datos por pantalla
+			4. Tenes un botón que al darle click muestre los datos actuales del formulario
+			5. Validación del formulario
+
+		-->
+
+		<h1>Ejercicio DOM, eventos y funciones </h1>
+		
+		<div id="container">
+
+			<div id="form">
+				<form action="#" method="POST" id="formulario" onsubmit="return false;">
+					
+					<label for="label-name">Name:</label><br/>
+					<input type="text" name="form-name" id="form-name" placeholder="Joaquin"/><br/>
+					<span id="error_nombre"></span><br/>
+
+					<label for="label-surname">Surname:</label><br/>
+					<input type="text" name="form-surname" id="form-surname" placeholder="Díaz"/><br/>
+					<span id="error_apellidos"></span><br/>
+
+					<label for="label-age">Age:</label><br/>
+					<input type="number" name="form-age" id="form-age" placeholder="20"><br/>
+					<span id="error_edad"></span><br/>
+
+					<input type="submit" value="enviar" id="submit">
+				</form>
+			</div>
+	
+			<div id="info">
+				<h1>USER INFO</h1>
+				<hr>
+				<p >
+					Nombre: <span id="name"></span>
+				</p>
+				<p>
+					Apellidos: <span id="surname"></span>
+				</p>
+				<p >
+					Edad: <span id="age"></span>
+				</p>		
+
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
